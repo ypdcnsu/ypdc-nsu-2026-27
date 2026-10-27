@@ -1,0 +1,156 @@
+:root{color-scheme:light;--ink:#0f1a2b;--muted:#4b5563;--accent:#e4002b;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box;margin:0}
+body{font-family:Poppins,system-ui,sans-serif;background:#fff;color:var(--ink);overflow-x:hidden}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 22px}
+.brand{font:800 22px Montserrat,sans-serif;color:var(--accent);transition:color .5s}
+.qrbtn{font:500 13px Poppins,sans-serif;color:#fff;background:var(--ink);padding:8px 14px;border-radius:999px;border:0;cursor:pointer}
+.stage{position:relative;width:100%;max-width:1600px;margin:0 auto;aspect-ratio:1520/640;container-type:inline-size;overflow:hidden;background:#fff}
+.art{position:absolute;inset:0}
+.logo{position:absolute;left:5.4cqw;top:2.6cqw;font:400 5.6cqw/1.1 Kavoon,"Chewy",cursive;text-transform:uppercase;background:linear-gradient(180deg,var(--accent),color-mix(in srgb,var(--accent) 40%,#000));-webkit-background-clip:text;background-clip:text;color:transparent;z-index:4;animation:slide .6s both}
+.ghostw{position:absolute;left:.6cqw;top:16cqw;transform:translateY(-50%)}
+.ghost{display:inline-block;white-space:nowrap;font:900 10cqw/1 "Cinzel Decorative",Georgia,serif;background:linear-gradient(180deg,#d8d8d8,#b2b2b2);-webkit-background-clip:text;background-clip:text;color:transparent;animation:fade .8s both}
+.bgp{position:absolute;inset:0;clip-path:polygon(62.2% 0,100% 0,100% 100%,40.5% 100%);background:linear-gradient(135deg,#1c1c1c,color-mix(in srgb,var(--accent) 35%,#000));animation:fadein .7s both}
+.bgp img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.bgp::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.38)}
+.band{position:absolute;inset:0;clip-path:polygon(92.8% 0,100% 0,100% 100%,76.3% 100%);background:var(--accent);transition:background .5s}
+.cut{position:absolute;left:45%;width:30%;height:89.5%;bottom:0;object-fit:contain;object-position:center bottom;animation:rise .7s both}
+.dots{position:absolute;right:3.4cqw;top:17.4cqw;display:flex;flex-direction:column;gap:1.6cqw;align-items:flex-end;z-index:5}
+.dots i{display:block;height:max(.28cqw,2px);width:2.4cqw;background:rgba(255,255,255,.45);cursor:pointer;transition:.3s}
+.dots i.on{width:3.5cqw;background:#fff}
+.info{position:absolute;left:3.9cqw;bottom:6cqw;width:39cqw;z-index:3;animation:slide .6s .1s both}
+.role{font:400 1.85cqw/1.3 Montserrat,sans-serif;color:#111}
+.role b{font-weight:700}
+.info h1{font:800 3.4cqw/1.15 Montserrat,sans-serif;color:var(--accent);text-transform:uppercase;transition:color .5s}
+.info p{font:400 1.2cqw/1.45 Poppins,sans-serif;color:#222;margin-top:.6cqw}
+.soc{position:absolute;left:3.9cqw;bottom:1.8cqw;display:flex;gap:1.1cqw;z-index:3}
+.soc a{width:2.1cqw;height:2.1cqw;border-radius:50%;border:1.5px solid #111;color:#111;display:grid;place-items:center;font:700 .8cqw Montserrat,sans-serif;text-decoration:none}
+.nav{position:absolute;inset:0;pointer-events:none;z-index:6}
+.nav button{position:absolute;bottom:.8cqw;width:7.4cqw;height:3.2cqw;border:0;cursor:pointer;transform:skewX(-42deg);pointer-events:auto;display:grid;place-items:center;transition:transform .2s}
+.nav button:hover{transform:skewX(-42deg) scale(1.06)}
+.nav svg{width:2.5cqw;transform:skewX(42deg);fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+#prev{left:36.3cqw;background:#000;color:#fff}
+#next{left:75.7cqw;background:#fff;color:#000}
+@keyframes fadein{from{opacity:0}}
+/* Linktree-style section */
+.tree{padding:36px 16px 48px;background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 8%,#fff),color-mix(in srgb,var(--accent) 38%,#8f847d))}
+.wrap{max-width:560px;margin:0 auto;text-align:center}
+.avatar{width:96px;height:96px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font:800 24px Montserrat,sans-serif;margin:0 auto 12px;overflow:hidden;border:3px solid #fff8}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.handle{font:700 24px Montserrat,sans-serif;color:#3d3d3d}
+.icons{display:flex;justify-content:center;gap:18px;margin:14px 0 26px}
+.icons a{color:#3d3d3d;width:30px;height:30px;display:block}
+.icons svg{width:100%;height:100%;fill:currentColor}
+.lbtn{display:flex;align-items:center;justify-content:center;position:relative;min-height:60px;margin-bottom:14px;background:var(--accent);color:#fff;text-decoration:none;font:500 16px Poppins,sans-serif;transition:transform .15s,background .5s}
+.lbtn:hover{transform:scale(1.02)}
+.lbtn::after{content:"⋮";position:absolute;right:14px;opacity:.7}
+h2{font:800 20px Montserrat,sans-serif;margin:30px 0 14px;color:#2b2b2b}
+.team{background:#fffd;border-left:6px solid var(--accent);margin-bottom:10px;text-align:left;border-radius:4px;overflow:hidden}
+.team summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:16px;cursor:pointer;font:600 15px Poppins,sans-serif}
+.team summary::-webkit-details-marker{display:none}
+.team .ab{font:800 12px Montserrat,sans-serif;color:var(--accent);margin-left:8px;white-space:nowrap}
+.team .arr{transition:transform .25s;color:var(--accent);font-size:18px}
+.team[open] .arr{transform:rotate(90deg)}
+.team .det{padding:0 16px 16px;font-size:13.5px;line-height:1.6;color:#444;animation:slide .3s both}
+.team .det b{color:#222}
+.team .det a{display:inline-block;margin-top:10px;background:var(--accent);color:#fff;padding:7px 14px;border-radius:999px;text-decoration:none;font-weight:500}
+footer{text-align:center;font-size:12px;color:#fff;padding-top:26px;opacity:.85}
+dialog{border:0;border-radius:16px;padding:22px;text-align:center}
+dialog::backdrop{background:#0008}
+#qr{display:grid;place-items:center;margin:12px 0}
+@keyframes rise{from{opacity:0;transform:translateY(5cqw)}}
+@keyframes fade{from{opacity:0;transform:translateX(-30px)}}
+@keyframes slide{from{opacity:0;transform:translateX(-18px)}}
+
+/* =====================================================================
+   RESPONSIVE LAYER  (paste at the very bottom of style.css)
+   - Desktop / wide screens : original wide slideshow layout
+   - Phones & tablets (portrait): stacked layout (picture on top, text below)
+   - Phones in landscape    : original wide layout, scaled down to fit
+   ===================================================================== */
+
+/* ---- A. All screens ------------------------------------------------ */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+img{max-width:100%}
+body{padding-left:env(safe-area-inset-left,0px);padding-right:env(safe-area-inset-right,0px)}
+.top{max-width:1600px;margin:0 auto}
+.brand{font-size:clamp(15px,2.4vw,22px);min-width:0;overflow-wrap:anywhere}
+.qrbtn{white-space:nowrap;flex-shrink:0;min-height:36px}
+.stage{touch-action:pan-y}               /* swipe left/right never fights page scroll */
+.dots i{position:relative}
+.dots i::after{content:"";position:absolute;inset:-9px -7px}   /* bigger tap area */
+dialog{max-width:min(92vw,340px)}
+#qr canvas,#qr img{max-width:100%;height:auto}
+.lbtn{overflow-wrap:anywhere}
+.team summary>span:first-child{min-width:0;overflow-wrap:anywhere}
+
+/* ---- B. Wide layout: keep text readable on small/medium widths ----- */
+.role{font-size:max(1.85cqw,13px)}
+.info h1{font-size:max(3.4cqw,20px)}
+.info p{font-size:max(1.2cqw,12px)}
+.soc a{width:max(2.1cqw,24px);height:max(2.1cqw,24px);font-size:max(.8cqw,10px)}
+
+/* ---- C. Stacked layout: phones & tablets (portrait) ---------------- */
+@media (max-width:900px) and (orientation:portrait),
+       (max-width:900px) and (min-height:501px),
+       (max-width:599px){
+ .stage{aspect-ratio:auto}
+ .art{position:relative;inset:auto;aspect-ratio:1/1}
+ .bgp{clip-path:polygon(34% 0,100% 0,100% 100%,0 100%)}
+ .band{clip-path:polygon(88% 0,100% 0,100% 100%,72% 100%)}
+ .ghostw{left:2cqw;top:30cqw}
+ .cut{left:20cqw;width:64cqw;height:86cqw}
+ .logo{font-size:12cqw;left:5cqw;top:3cqw}
+ .dots{right:4cqw;top:30cqw;gap:12px}.dots i{width:20px;height:2px}.dots i.on{width:32px}
+ .info{position:static;width:auto;padding:20px 22px 0}
+ .role{font-size:clamp(13px,3.6vw,18px)}
+ .info h1{font-size:clamp(22px,6.4vw,34px);overflow-wrap:anywhere}
+ .info p{font-size:clamp(13px,3.6vw,17px);margin-top:6px}
+ .soc{position:static;padding:14px 22px 0;gap:10px}
+ .soc a{width:34px;height:34px;font-size:12px}
+ .nav{position:static;display:flex;gap:14px;padding:18px 28px 26px}
+ .nav button{position:static;width:92px;height:44px}.nav svg{width:30px}
+ #next{box-shadow:0 0 0 1.5px #bbb}
+ .handle{font-size:21px}
+}
+
+/* Tablets in portrait: keep the card a comfortable size, centred */
+@media (min-width:641px) and (max-width:900px) and (min-height:501px){
+ .stage,.top{max-width:640px}
+ .tree{padding-left:24px;padding-right:24px}
+}
+
+/* ---- D. Phones in landscape: use the wide layout, tighter chrome --- */
+@media (orientation:landscape) and (max-height:500px) and (min-width:600px){
+ .top{padding:6px 18px}
+ .qrbtn{min-height:30px;padding:5px 12px}
+ .tree{padding-top:24px}
+ .role{font-size:max(1.85cqw,11px)}
+ .info h1{font-size:max(3.4cqw,16px)}
+ .info p{font-size:max(1.2cqw,11px)}
+ .info{bottom:4.5cqw}
+}
+
+/* ---- E. Small phones ------------------------------------------------ */
+@media (max-width:400px){
+ .top{padding:10px 14px}
+ .info{padding:16px 16px 0}.soc{padding:12px 16px 0}
+ .nav{padding:16px 16px 22px}
+ .nav button{width:80px;height:40px}
+ .tree{padding:28px 12px 40px}
+ .avatar{width:84px;height:84px}
+ .handle{font-size:19px}
+ .lbtn{min-height:54px;font-size:15px}
+ .team summary{padding:14px 12px;font-size:14px}
+ .team .det{padding:0 12px 14px;font-size:13px}
+}
+
+/* ---- F. Extra-wide screens ----------------------------------------- */
+@media (min-width:1700px){
+ .tree .wrap{max-width:620px}
+}
+
+/* ---- G. Respect "reduce motion" setting ---------------------------- */
+@media (prefers-reduced-motion:reduce){
+ .art *,.info,.logo,.team .det{animation:none!important}
+}
