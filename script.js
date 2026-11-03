@@ -41,10 +41,10 @@ const MEMBERS = [
 const TEAMS = [
   { short:"SBMD (BANO SHAHEEN)", name:"Semester Based Membership Drive (BANO SHAHEEN)", lead:"Team lead name", about:"The Bano Shaheen Team promotes women’s empowerment, leadership, and active participation in community development. It encourages young women to build confidence, develop skills, and create positive change.", join:"" },
   { short:"MCT",    name:"Media & Creative Team",               lead:"Team lead name", about:"The Media & Creative Team brings ideas to life through innovative designs, creative content, and visual storytelling. It helps present YPDC’s vision and activities in an engaging way.", join:"" },
-  { short:"OCE",    name:"Outreach and Community Engagement",   lead:"Team lead name", about:"Builds connections, engages with communities, and promotes YPDC initiatives. It focuses on communication, networking, and encouraging youth participation.", join:"" },
+  { short:"OCE",    name:"Community Outreach Team",   lead:"Team lead name", about:"Builds connections, engages with communities, and promotes YPDC initiatives. It focuses on communication, networking, and encouraging youth participation.", join:"" },
   { short:"ELT",    name:"Event & Logistic Team",               lead:"Team lead name", about:"The Event Management and Logistics Team handles event planning, coordination, and logistical arrangements. It ensures that resources, venues, schedules, and essential requirements are managed efficiently for successful events.", join:"" },
   { short:"YPDC DF",name:"YPDC Debating Forum",                 lead:"Team lead name", about:"The Debating Team promotes critical thinking, public speaking, and constructive dialogue. It empowers members to express ideas confidently, build strong arguments, and discuss important social issues.", join:"" },
-  { short:"SM",     name:"Stage Management",                    lead:"Team lead name", about:"The Stage Management Team ensures the smooth flow of programs, ceremonies, and stage activities. It coordinates speakers, manages transitions, and maintains event discipline.", join:"" }
+  { short:"SM",     name:"Stage Management",                    lead:"Team lead name", about:"The Stage Management Team ensures the smooth execution of programs, ceremonies, and stage activities. It oversees stage operations, hosts and coordinates stage proceedings, manages speakers and program transitions, and maintains discipline and professionalism throughout events.", join:"" }
 ];
 /* =====================  END OF EDITABLE BLOCK  ===================== */
 
